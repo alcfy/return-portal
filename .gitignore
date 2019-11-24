@@ -1,0 +1,11 @@
+.env
+prod_env
+.DS_Store
+assets/
+node_modules/
+.next/
+.secret/
+process.env
+serviceAccountCredentials.json
+firebase_credentials.json
+firebase_dev.json

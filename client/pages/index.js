@@ -1,20 +1,14 @@
-"use strict";
-import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import IdentifyApp from "./Confirmation/IdentifyApp2";
-import getConfig from "next/config";
-
-const { publicRuntimeConfig } = getConfig();
-const { API_URL } = publicRuntimeConfig;
+import React from 'react'
+import SearchOrderPage from '../components/SearchOrderPage';
 
 class Index extends React.Component {
-  render() {
-    return (
-      <div>
-        <IdentifyApp serveoname={API_URL} />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<SearchOrderPage
+				shopDomain="www.google.com"
+				shopLogoUrl="https://anya23blog.files.wordpress.com/2016/11/pomelo-logo-square.jpg?w=820&h=312&crop=1" />
+		);
+	}
 }
 
 export default Index;
